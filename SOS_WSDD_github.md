@@ -100,17 +100,17 @@
 
 [3.2.3.2.2.2.2 &nbsp; Profiling sensor observation-specific report](#3.2.3.2.2.2.2)
 
-[4  &nbsp; GLOSSARY](#4)
+[4 &nbsp; GLOSSARY](#4)
 [5 &nbsp; ACRONYMS  ](#5)
 
 * * * * *
 
-# <a name="1"></a> 1. SCOPE #
+# <a name="1"></a> 1 SCOPE #
 
 
 This Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
 
-#  2. APPLICABLE DOCUMENTS #
+#  2 APPLICABLE DOCUMENTS #
 
 | #  | Name and Location  |
 | :---: | :--- |
@@ -2380,7 +2380,7 @@ Similar to the non-profiling sensors, the sensor names used in the **DataChoice*
 
 
 
-# <a name="4"></a>  4. GLOSSARY #
+# <a name="4"></a>  4 GLOSSARY #
    
 Term | Definition
 :-----| :--------
@@ -2400,7 +2400,7 @@ Feature of Interest | A feature that relates to the observations, and represente
 Offering | A collection of sensors used to conveniently group them up (e.g. network:all, network:all-temperature, sensor:watertemp, etc.) and is represented as `<sos:ObservationOffering>` element of the SOS standard.
 
 
-# <a name="5"></a>  5. ACRONYMS #
+# <a name="5"></a>  5 ACRONYMS #
 
 Acronym|Definition
  :----- |:-----
