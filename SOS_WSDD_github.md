@@ -737,11 +737,13 @@ The input parameters of the DescribeSensor request are explained in the followin
 
 The following examples illustrate HTTP/GET and HTTP/POST DescribeSensor requests. Although parameter names in a GET KVP request are case-insensitive, IOOS Convention recommends writing them in lower case just for ease-of-reading and consistency:
 
-- HTTP/GET:
+- **HTTP/GET**:
 
-`http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?request=DescribeSensor&service=SOS&version=1.0.0&procedure=[anyURI]&outputformat=text/xml;subtype="sensorML/1.0.1/profiles/ioos_sos/1.0"`
+```XML
+http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?request=DescribeSensor&service=SOS&version=1.0.0&procedure=[anyURI]&outputformat=text/xml;subtype="sensorML/1.0.1/profiles/ioos_sos/1.0"
+```
 
--   HTTP/POST:
+- **HTTP/POST**:
 ```XML
 <sos:DescribeSensor version="1.0.0" service="SOS"
   xmlns="http://www.opengis.net/sos/1.0"
