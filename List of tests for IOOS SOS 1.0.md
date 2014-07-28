@@ -1,4 +1,4 @@
-List of OGC CITE general & IOOS-specific tests <br />for IOOS SOS Milestone 1.0 
+List of OGC CITE common & IOOS-specific tests <br />for IOOS SOS Milestone 1.0 
 =================
 
 
