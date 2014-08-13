@@ -11,10 +11,10 @@
     
     <item>
       <title>About this site</title>
-      <link>http://abirger.github.io/</link>
+      <link>http://abirger.github.io/docs</link>
       <pubDate>Mon, 04 Aug 2014 07:56:39 UTC</pubDate>
       
-      <guid>http://abirger.github.io/</guid>
+      <guid>http://abirger.github.io/docs</guid>
       <description>&lt;p&gt;This is an experimental site for the documents on IOOS DMAC program:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -30,10 +30,10 @@
     
     <item>
       <title>List of SOS Tests</title>
-      <link>http://abirger.github.io/testing</link>
+      <link>http://abirger.github.io/docs</link>
       <pubDate>Mon, 04 Aug 2014 08:10:23 UTC</pubDate>
       
-      <guid>http://abirger.github.io/testing</guid>
+      <guid>http://abirger.github.io/docs</guid>
       <description>
 
 &lt;p&gt;&lt;em&gt;This document contains a list of required and optional tests that have to be run in order to ensure full compliance with IOOS SOS Profile 1.0 (Milestone 1.0), and currently sufficient level of compliance with the OGC SOS 1.0.0 specification.&lt;/em&gt;&lt;/p&gt;
