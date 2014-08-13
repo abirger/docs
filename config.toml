@@ -1,6 +1,6 @@
-baseurl = "http://localhost:1313/about"
+baseurl = "http://abirger.github.io/Docs/"
 languageCode = "en-us"
- Title = "IOOS DMAC"
+Title = "IOOS DMAC"
 [params]
  Description = "SOS Milestone 1.0 Documentation"
  Copyright = "(C) 2014 U.S. IOOS. Some rights reserved"
