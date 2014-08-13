@@ -1,0 +1,7 @@
+baseurl = "http://localhost:1313/about"
+languageCode = "en-us"
+ Title = "IOOS DMAC"
+[params]
+ Description = "SOS Milestone 1.0 Documentation"
+ Copyright = "(C) 2014 U.S. IOOS. Some rights reserved"
+ 
