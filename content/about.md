@@ -1,5 +1,5 @@
 +++
-url = "Docs/about"
+url = "Docs/about/"
 weight = "-500"
 draft = false
 title = "About this site"
