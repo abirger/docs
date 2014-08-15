@@ -1,4 +1,4 @@
-baseurl = "http://abirger.github.io"
+baseurl = "http://abirger.github.io/docs"
 languageCode = "en-us"
 Title = "IOOS DMAC"
 [params]
