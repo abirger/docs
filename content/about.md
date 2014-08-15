@@ -1,5 +1,5 @@
 +++
-path = "abirger.github.io/docs/about"
+path = "docs/"
 weight = "-500"
 draft = false
 title = "About this site"
