@@ -1,4 +1,5 @@
 +++
+url = "Docs/testing/"
 draft = false
 title = "List of SOS Tests"
 subtitle = "List of OGC CITE general & IOOS-specific tests for IOOS SOS Milestone 1.0"
@@ -12,8 +13,8 @@ _This document contains a list of required and optional tests that have to be ru
 <!--more-->
 
 
-## 1 OWS Common Tests ##
-### 1.1 owsTests:ows-main ###
+## OWS Common Tests ##
+### owsTests:ows-main ###
 **(_Run test group for GetCapabilities requests using the GET method._)**
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
@@ -32,7 +33,7 @@ _This document contains a list of required and optional tests that have to be ru
 |**owsTests:ows-OWS.GetCapabilities-Sections.2**|The response to a GetCapabilities request that includes a sections parameter listing optional elements _ServiceIdentification_ and _OperationsMetadata_ shall include only the requested elements in the response entity `http://SOS-server-URL/sos?service#SOS&request#GetCapabilities&sections#ServiceIdentification,OperationsMetadata`. Pass if the response is schema valid and includes only the requested optional elements.| **R** |
 |**owsTests:ows-OWS.GetCapabilities-AcceptFormats.1**|The response to a GetCapabilities request containing an _AcceptFormats_ parameter specifying a supported format must include a response entity that corresponds to the requested media type.  Examples: (1)`http://SOS-server-URL/sos?service#SOS&request#GetCapabilities&acceptformats#text/xml` and (2)`http://SOS-server-URL/sos?service#SOS&request#GetCapabilities&acceptformats#application/zip`.  Pass if the response is schema valid and _outputFormat_ equals requested media type.| **O** |
 
-## 2 General SOS Tests ##
+## General SOS Tests ##
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -40,12 +41,12 @@ _This document contains a list of required and optional tests that have to be ru
 |**sos:general-SOS.General-ValidResponse.1**|A response is a valid response for the SOS. This general assertion is tested by all other tests, so there is nothing specific to test now.| **N/A** |
 
 
-## 3 Core SOS Tests ##
-**(_A request for a valid capabilities document is made with the optional “acceptversions” parameter omitted, and a response is validated with the schema. Further tests are performed on the GetCapabilities response only if the response passes schema validation._)**
+## Core SOS Tests ##
+**_A request for a valid capabilities document is made with the optional “acceptversions” parameter omitted, and a response is validated with the schema. Further tests are performed on the GetCapabilities response only if the response passes schema validation._**
 
-### 3.1 GetCapabilities Tests ###
+### GetCapabilities Tests ###
 
-#### 3.1.1 OGC General Tests ####
+#### OGC General Tests ####
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -63,7 +64,7 @@ _This document contains a list of required and optional tests that have to be ru
 | | | |
 
 
-#### 3.1.2 IOOS-specific Tests ####
+#### IOOS-specific Tests ####
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -84,9 +85,9 @@ _This document contains a list of required and optional tests that have to be ru
 | | | |
 | | | |
 
-### 3.2 DescribeSensor Tests ###
+### DescribeSensor Tests ###
 
-#### 3.2.1 OGC General Tests ####
+#### OGC General Tests ####
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -96,7 +97,7 @@ _This document contains a list of required and optional tests that have to be ru
 |**describeSensor:core-SOS.DescribeSensor-ResponseMatchingProcedure.1**|The unique identifier in the response document matches the procedure URN specified in the request.| **R** |
 | | | |
 
-#### 3.2.2 IOOS-specific Tests ####
+#### IOOS-specific Tests ####
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -119,11 +120,11 @@ _This document contains a list of required and optional tests that have to be ru
 |**describeSensor:IOOS-SOS.DescribeSensor- ResponseContainsValidOperationsMetadataProperty.17**|SensorML document for a single station provides a description of at least one sensor that is located at the station (platform), and for each sensor a ‘sensorID’ and a list of the properties observed by this sensor are provided.| **R** |
 
 
-### 3.3 GetObservation Tests ###
+### GetObservation Tests ###
 
-**(_All GetObservation tests use “POST” method, and URL obtained from the GetCapabilities response._)**
+**_All GetObservation tests use “POST” method, and URL obtained from the GetCapabilities response._**
 
-#### 3.3.1 OGC General Tests ####
+#### OGC General Tests ####
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |
@@ -147,7 +148,7 @@ _This document contains a list of required and optional tests that have to be ru
 |**getObservation:core-SOS.GetObservation-ResponseMatchingResponseFormatData.1**|The format of the response data matches the format supplied in the _responseFormat_ parameter of the request.| **R** |
 | | | |
 
-#### 3.3.2 IOOS-specific Tests ####
+#### IOOS-specific Tests ####
 
 | **TESTS** | **ASSERTIONS** | **IOOS Rq'd/Opt** |
 | --------- | -------------- | :---------------: |

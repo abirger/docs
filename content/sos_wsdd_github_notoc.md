@@ -1,4 +1,5 @@
 +++
+url = "Docs/sos_wsdd_github_notoc/"
 draft = false
 title = "IOOS SOS 1.0 WSDD"
 description = "IOOS SOS Milestone 1.0 Web Service Description"
@@ -8,39 +9,14 @@ menu = "main"
 +++
 
 
-This Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
+_This Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model._
 <!--more-->
 
 * * * * *
 
 
 
-## 1 SCOPE ##
-
-
-This Web Service Description Document (WSDD) provides a description of a Sensor Observation Service (SOS) that has been developed by U.S. IOOS for deployment by NOAA data providers and IOOS Regional Associations (RAs). This service provides a service consumer with the capability to access ocean observations data products, such as time series and profiles, which have XML-based encodings and included in the SWE Common Data Model.
-
-##  2 APPLICABLE DOCUMENTS ##
-
-| #  | Name and Location  |
-| :---: | :--- |
-| 1 | OpenGIS Geography Markup Language (GML) Encoding Standard Version 3.1, Open Geospatial Consortium (OGC), February 2004. [http://www.opengeospatial.org/standards/gml](http://www.opengeospatial.org/standards/gml) |
-| 2 | OpenGIS Sensor Model Language (SensorML) Implementation Specification Version 1.0.0, Open Geospatial Consortium (OGC), July 2007 [http://www.opengeospatial.org/standards/sensorml](http://www.opengeospatial.org/standards/sensorml) |
-| 3 | OpenGIS Filter Encoding 2.0 Encoding Standard Version 2.0.0, Open Geospatial Consortium, International Organization for Standards (ISO) 19143:2010, November 2010. [http://www.opengeospatial.org/standards/filter](http://www.opengeospatial.org/standards/filter)|
-| 4 | OpenGIS Geography Markup Language (GML) Encoding Standard Version 3.2.1, Open Geospatial Consortium (OGC), August 2007. [http://www.opengeospatial.org/standards/gml](http://www.opengeospatial.org/standards/gml) |
-| 5 | OpenGIS Sensor Observation Service (SOS) Implementation Standard Version 1.0.0, Open Geospatial Consortium, October 2007, OGC 06-009r6. [http://www.opengeospatial.org/standards/sos](http://www.opengeospatial.org/standards/sos) |
-| 6 | OpenGIS Sensor Observation Service (SOS) Implementation Standard Version 2.0, Open Geospatial Consortium, April 2012, OGC 12-006. [http://www.opengeospatial.org/standards/sos](http://www.opengeospatial.org/standards/sos) |
-| 7 | OpenGIS Network Common Data Form (NetCDF) Core Encoding Standard Version 1.0, Open Geospatial Consortium, April 2011. [http://www.opengeospatial.org/standards/netcdf](http://www.opengeospatial.org/standards/netcdf) |
-| 8 | OpenGIS Web Services Common Standard Version 2.0, Open Geospatial Consortium, April 2010. [http://www.opengeospatial.org/standards/common](http://www.opengeospatial.org/standards/common) |
-| 9 | Web Services Description Language (WSDL) Version 1.1, W3C Note, March 2001 [http://www.w3.org/TR/wsdl](http://www.w3.org/TR/wsdl) |
-| 10 | NetCDF Climate and Forecast (CF) Metadata Conventions Version 1.6, December 2011,  [http://cf-pcmdi.llnl.gov/documents](http://cf-pcmdi.llnl.gov/documents) |
-| 11 | CF Conventions Standard Name Table, Version 25, July 2013,  [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/25/cf-standard-name-table.html](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/25/cf-standard-name-table.html) |
-| 12 | NetCDF Feature Type Templates, National Oceanographic Data Center (NODC) [http://www.nodc.noaa.gov/data/formats/netcdf/#templatesexamples](http://www.nodc.noaa.gov/data/formats/netcdf/#templatesexamples) |
-| 13 | OpenGIS SWE Common Data Model Encoding Standard Version 2.0.0, Open Geospatial Consortium (OGC), January 2011 [http://www.opengeospatial.org/standards/swecommon](http://www.opengeospatial.org/standards/swecommon) |
-
-* * * * *
-
-## 3 SERVICE INTERFACES ##
+## SERVICE INTERFACES ##
 
 The service interface is a collection of operations, messages, types and elements descriptions. It provides detail on how the SOS data requests and responses are constructed independent of the messaging transmission technology.
 
@@ -52,9 +28,9 @@ The Milestone 1.0 interface is considered a composition of several OGC specifica
 
 The interface is comprised of some operations, parameters and attributes, which are considered mandatory by the specifications and others which are not. This information, referred to as a Profile, includes information on specification extensions (operations, parameters and attributes not included in a specification) and exclusions (operations, parameters and attributes that are not implemented). The following sections describe the IOOS SOS Profile for Milestone 1.0 providing additional detail about parts of the OGC specifications supported by the Milestone 1.0 implementation and how they are used.
 
-## 3.1 Conformance to Standards and Conventions ##
+### Conformance to Standards and Conventions ###
 
-### 3.1.1 OGC SOS Implementation Standards ###
+#### OGC SOS Implementation Standards ####
 
 [**Figure 1**](#Fig_1) depicts the Unified Modeling Language (UML) diagram for the OGC O&M core model, which specifies the core conformance classes, which are described within the SOS specification.
 
@@ -67,23 +43,23 @@ As the SOS 2.0 standard has been approved as an official OGC standard while Mile
 
 The subsequent sections provide more detail on the service interfaces, including information on data types, messages, operations, and interface descriptions.
 
-### 3.1.2 NetCDF Climate and Forecast Metadata Convention ###
+#### NetCDF Climate and Forecast Metadata Convention ####
 
 The Climate and Forecast (CF) Conventions introduce the standard ways for naming and description of feature types, data components, dimensions, variables and attributes, coordinate systems definition, axis order, etc. The CF Conventions were originally framed as a standard for data written in netCDF format, with model-generated climate forecast data in mind. However, it turned out to be equally applicable to observational datasets presented in various other formats. The IOOS has adopted the CF 1.6 Conventions for both 52⁰North and ncSOS implementations in order to provide SWE encodings for the feature types that are relevant for the IOOS community. In IOOS SOS implementations, the CF Conventions are used for description of data quantities (such as CF standard names, physical descriptions, code spaces, UoMs, etc.) as well as data location in space and time.
 
-### 3.1.3 IOOS Convention and SOS Templates ###
+#### IOOS Convention and SOS Templates ####
 
 To facilitate the practical implementation of the OGC SOS, IOOS has started the development of a series of Templates that explicitly define the IOOS SOS operation responses for the CF feature types. Within Milestone 1.0 timeframe, the templates have only been developed for “point”, “timeSeries”, and “timeSeriesProfile” feature types ([https://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0](https://code.google.com/p/ioostech/source/browse/#svn/trunk/templates/Milestone1.0?state=open)); the templates for other feature types are planned for Milestone 2.0. The templates are intended as a mandatory guidance for all developers of IOOS-compliant SOS applications.
 
 The Milestone 1.0 templates fully conform to the OGC SOS 1.0.0 Implementation Standard; however, in some “grey areas” where the SOS 1.0.0 is vague and does not provide sufficient guidance, it has been refined with a special IOOS Convention. The IOOS Convention contains additional constraints, definitions, requirements and “best practice” sort of recommendations that SOS 1.0.0 lacks; for future transition, the Convention follows SOS 2.0 requirements and definitions wherever they have been considered applicable, and do not contradict the SOS 1.0.0 specification. The provisions of the IOOS Convention are captured in the IOOS SOS Templates, and described further in this document.
 
-### 3.1.4 Coordinate System Axis Order ###
+#### Coordinate System Axis Order ####
 
 Historically, there was considerable confusion regarding axis order in GML documents, and coordinate reference systems. This confusion started with the introduction of the very first version of theOGC WMS, where axis “x” (longitude) preceeded axis “y” (latitude), while coordinate reference systems defined the opposite order of axis. After some discussion, it was agreed that if CRS is explicitly defined in the service interface or payload, then coordinate values shall be listed in the axis order specified by the referred CRS ([OGC 06-135r1 “Specification best practices](http://portal.opengeospatial.org/files/?artifact_id=17566)”).
 
 For IOOS SOS implementations, the CRS reference procedure is defined in OGC 06-121r3 “OGC Web Services Common Specification”, and additionally specified by the IOOS Convention. As the EPSG::4326 CRS is required to identify a station horizontal coordinates, the axis order must match the EPSG::4326 definition, i.e. latitude must precede longitude. The vertical coordinate must always be listed after the horizontal ones, and explicitly follow the definition of the vertical CRS.
 
-### 3.1.5 Namespaces ###
+#### Namespaces ####
 
 The XML type references in the subsequent sections make use of XML namespace prefixes to fully qualify their namespaces. The map of prefixes to standardized namespaces is:
 
@@ -102,7 +78,7 @@ Note that an IOOS-compliant SOS service shall conform to the following specific 
 -   In GetObservation, the `<swe:>` and `<swe2:>` prefixes must present, as both SWE Common v1.0 and v2.0 are used in this operation, and the prefixes refer to different versions of SWE Common (see list above).
 -   In both GetCapabilities and GetObservation, the `<gml:>` prefix may omit reference to a version number, as shown above (just because GML 3.1.1 has been a default version for the O&M 1.0 schema).
 
-### 3.1.6 Capitalization ###
+#### Capitalization ####
 
 The use of the upper and lower cases in SOS response documents and requests is defined by the OGC 06-121r9 “OGC Web Services Common Standard”, clauses 11.5.2 and 11.6.2. To extend and augment the OGC assertions, IOOS Convention require the following:
 
@@ -117,7 +93,7 @@ The IOOS Convention stipulates for the following exceptions:
 -   labels containing the short version of an identifier or definition URI that contains underscores keep their original case (e.g. air_temperature, station_12, etc);
 -   identifier values and terms from established vocabularies (e.g. [http://mmisw.org/ont/cf/parameter/air_temperature](http://mmisw.org/ont/cf/parameter/air_temperature) or `urn:ioos:station:RA_authority:station_name`) keep their original (vocabulary) case.
 
-### 3.1.7 Use of URL in HTTP GET and POST Requests ###
+#### Use of URL in HTTP GET and POST Requests ####
 
 HTTP supports two request methods: GET and POST. In a GET method, request parameters are transmitted as part of the service URL, and in a POST method, request parameters are transmitted in the body of the POST message.
 
@@ -135,7 +111,7 @@ For HTTP POST operation, a URL does not require additional parameters to be appe
 
 **```http://SERVERNAME:[PORT]/SOS-WEBAPP/sos```**
 
-## 3.2 Operations ##
+### Operations ###
 
 The OGC SOS interface is based on the OGC Web Service Common specification, thus, it has shares structures and data types of service requests with the other OGC Web Services. In the case of SOS, the operation signature is constrained by the observation schema, as it defines the response model. The SOS v1.0 defines three operational profiles:
 
@@ -168,13 +144,13 @@ Erroneous requests detected by the server result in a response containing an XML
 
 Examples of the consumer requests and SOS server responses are shown in subsequent sections. Unless something different is specified, the encoding samples have been taken from the set of [IOOS SOS Milestone 1.0 templates](https://code.google.com/p/ioostech/source/browse/trunk/templates/Milestone1.0?state=open).
 
-### 3.2.1 GetCapabilities ###
+#### GetCapabilities ####
 
 GetCapabilities operation provides the interface for any client to access metadata about a specific service, which in this case is SOS. This operation allows clients to retrieve service metadata about a specific service instance, including metadata about the tightly-coupled data served. In addition to more generic capabilities response elements such as filter options, the SOS GetCapabilities returns a list of so called Offerings, which are groupings of available observations described by their feature of interest, procedure, observed property, temporal coverage and the like. This allows the user application to clearly identify the types and quality of data that can be requested from this service.
 
 Please note, that SOS in version 1.0 does not restrict creation of observation offerings. On the other hand, SOS 2.0 is more specific and defines that each observation offering is limited to be associated with exactly one procedure, which can be a network, station, or sensor. The U.S. IOOS has made a decision to imply that limitation starting at Milestone 1.0 with SOS v1.0; this not only solves the issue of the SOS 1.0 with ambiguous groupings of observations to offerings but also ensures the continuity of the Milestones.
 
-#### 3.2.1.1 GetCapabilities Request ####
+##### GetCapabilities Request #####
 
 GetCapabilities request may be sent to the server as HTTP/GET or HTTP/POST. HTTP/GET request passes parameters to the server in the HTTP URL with a number of key-value pairs (KVP) of input parameters, and HTTP/POST request sends an XML document to the server, that may also be KVP-encoded. A request to perform GetCapabilities should follow the structure as depicted in the [**Figure 3**](#Fig_3) and table below.
 
@@ -219,7 +195,7 @@ service="SOS" updateSequence="">
 </sos:GetCapabilities>
 ```
 
-#### 3.2.1.2 GetCapabilities Response ####
+##### GetCapabilities Response #####
 
 The response to a GetCapabilities request is an XML encoded document that conforms to the [SOS 1.0.0 Implementation Specification [OGC 06-009r6]](http://portal.opengeospatial.org/files/?artifact_id=26667), and illustrates the characteristics of the SOS system by providing a comprehensive information about coordinate reference system (CRS), spatial or temporal filtering and other information about sensors, feature of interest, and response format. The OGC specification is constrained by the IOOS Convention that on one hand prescribes a certain way of use for some optional components, and on the other hand – facilitates the future acceptance of the SOS 2.0. At any rate, the IOOS Convention does not violate OGC specification’s requirements.
 
@@ -252,7 +228,7 @@ xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/x
 The subsections are described in more details in the following chapters.
 
 
-##### 3.2.1.2.1 ServiceIdentification #####
+###### ServiceIdentification ######
 
 This section contains metadata about this specific server, including the title, abstract, keywords, service type, version, fees, and access constraints if any for using this server. No IOOS-specific guidelines and conventions are applicable to this section; it is fully defined by the SOS 1.0.0 standard.
 
@@ -271,7 +247,7 @@ This section contains metadata about this specific server, including the title, 
   </ows:ServiceIdentification>
 ```
 
-##### 3.2.1.2.2 ServiceProvider #####
+###### ServiceProvider ######
 
 This section contains metadata about the organization operating this server, including service provider name, site, address, contact information, etc. Similar to the previous section described above, this section does not require following any IOOS-specific conventions; it is fully defined by the SOS 1.0.0 standard.
 
@@ -299,7 +275,7 @@ This section contains metadata about the organization operating this server, inc
   </ows:ServiceProvider>
 ```
 
-##### 3.2.1.2.3 OperationsMetadata #####
+###### OperationsMetadata ######
 
 This section contains metadata about the operations specified by this service and implemented by this server, including the URLs, parameters for operation requests. A corresponding section of the IOOS Milestone 1.0 GetCapabilities template is presented below; the template contains just the bare minimum of the required metadata that describes the server operations capability.
 
@@ -383,7 +359,7 @@ In addition tothe SOS v1.0.0 Implementation Specification, the IOOS Convention r
   </ows:OperationsMetadata>
 ```
 
-##### 3.2.1.2.4 Contents #####
+###### Contents ######
 
 This section contains the list of all of the observation offerings available from the service, specifically the network offerings and offerings for all affiliated stations/platforms. Each of the `<sos:ObservationOffering>` elements describes a collection of related sensor system observations. However, in order to restrain the response document size and mitigate scalability problems, the IOOS Convention requires that sensor offerings must not be included in a platform offering description, i.e none of the `<sos:ObservationOffering>` elements may include a sensor procedure. In order to get a detailed description of the sensors installed on the platform, a DescribeSensor operation should be used.
 
@@ -616,7 +592,7 @@ Even more details are depicted in the sample below, which presents a Contents pa
   </sos:Contents>
 ```
 
-### 3.2.2 DescribeSensor ###
+#### DescribeSensor ####
 
 A **DescribeSensor** is a simple core SOS operation that returns an XML Document associated with one or more sensors, platforms or networks. It provides metadata about sensors and the observation collected by these sensors. All the information of sensor characteristics is encoded into the SensorML standard.
 
@@ -624,7 +600,7 @@ With some sophisticated sensors or sensor-reach platforms and networks, the meta
 
 The following sections illustrate DescribeSensor HTTP/GET and HTTP/POST requests, provides the list of the request parameters and description for the DescribeSensor operation response.
 
-#### 3.2.2.1 DescribeSensor Request ####
+##### DescribeSensor Request #####
 
 A DescribeSensor request may be sent to the server as HTTP/GET or HTTP/POST. While HTTP/POST request sends an XML document to the server, HTTP/GET request passes parameters to the server in the HTTP URL with a number of key-value pairs (KVP) of input parameters. A request to perform DescribeSensor operation should follow the structure that is described in this section.
 
@@ -665,7 +641,7 @@ http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?request=DescribeSensor&service=SOS&ve
 ```
 
 
-#### 3.2.2.2 &nbsp; DescribeSensor Response ####
+##### DescribeSensor Response #####
 
 The response to a DescribeSensor request is a [Sensor Model Language (SensorML](http://www.opengeospatial.org/standards/sensorml)) document that describes the sensor system. In some cases, a DescribeSensor response may be quite voluminous; for example, if description of the network has been requested, and the response returns the document that contains detailed information not just about the network itself, but all network platforms and all sensors installed on each platform. A UML diagram  of such an all-inclusive DescribeSensor document is depicted in [**Figure 6**](#Fig_6) followed by the annotated outline of the document.
 
@@ -781,7 +757,7 @@ The response to a DescribeSensor request is a [Sensor Model Language (SensorML](
 
 In order to decrease the size of the DescribeSensor document, and limit the volume of the detailed information returned, IOOS recognizes 3 separate types of the DescribeSensor documents. For Milestone 1.0, the IOOS SOS is required to provide documents describing network and individual platform, while the description of individual sensor is optional.
 
-##### 3.2.2.2.1 Network of platforms/stations #####
+###### Network of platforms/stations ######
 
 A mandatory DescribeSensor response for a network of platforms/stations shall return:
 
@@ -973,7 +949,7 @@ The IOOS Convention provides more detailed guidance to some SensorML elements’
 | sml:component | 1…* | Describes each individual platform from the list. The following elements and associated attributes are required for each platform: <br /><ul><li>**\<sml:identification\>** <br />to indicate _stationID_, _shortName_ and _longName_ (optionally) for the specific platform; an indication of a _wmoID_ is strongly recommended as well;</li><li>**\<sml:capabilities  name="observationTimeRange"\>** <br />to indicate observation time range;</li><li>**\<sml:location/gml:Point\>** <br />to specify the 2D geographic location of the fixed platform (always in EPSG::4326);</li><li>**\<sml:outputs\>** <br />to specify the properties observed by the platform</li></ul> |
 
 
-##### 3.2.2.2.2 Platform/Station #####
+###### Platform/Station ######
 
 A mandatory **DescribeSensor** response for a specific platform/station shall return:
 
@@ -1294,7 +1270,7 @@ The IOOS Convention provides more specific guidance to some SensorML elements’
 | sml:component | 1…* | Describes each individual sensor from the component list. The sensor name should be a human readable label.<br /><br />The following 2 elements are mandatory for each sensor:<ul><li>**\<sml:identification\>** <br />to indicate sensorID for the specific sensor;</li><li>**\<sml:outputs\>** <br />to specify the list of all properties observed by the sensor.</li></ul><br />The other 2 elements are optional but strongly recommended for each sensor:<ul><li>**\<sml:description\>** <br />to briefly describe the sensor in a human-readable form; </li><li>**\<sml:documentation\>** <br />to specify the external resources for human consumption about this sensor and the observation data it produces. |
 
 
-##### 3.2.2.2.3 Sensor #####
+###### Sensor ######
 
 The IOOS SOS Milestone 1.0 does not require a provision of DescribeSensor documents for individual sensors. However, if an SOS server offers these documents nevertheless, the corresponding DescribeSensor response should return:
 
@@ -1326,11 +1302,11 @@ If the DescribeSensor document for individual sensor is provided, the IOOS Conve
 | sml:outputs | 1…* | Describes the specific results of the measurement of the input physical phenomena, e.g. Wind speed, Wind direction, etc. |
 
 
-### 3.2.3 GetObservation ###
+#### GetObservation ####
 
 A **GetObservation** operation queries SOS to retrieve observation data structured according to the Observation and Measurement specification. Upon receiving a GetObservation request, a SOS shall either satisfy the request or return an exception report. The GetObservation operations provides observations based on the setting of filters that includes timing, processes, phenomena, feature of interest, and other parameters of the O&M model.
 
-#### 3.2.3.1 GetObservation Request ####
+##### GetObservation Request #####
 
 A **GetObservation** request contains one or more elements that constrain the observations to be retrieved from a Sensor Observation Service. Each GetObservation query element has mandatory attributes of service and version. The mandatory version element attribute must correspond to the specific service interface version negotiated between the service and client during the service binding process. The required service attribute explicitly must be “SOS”.
 
@@ -1396,7 +1372,7 @@ http://SERVERNAME:PORT/SOS_WEBAPP_NAME/sos?service=SOS&version=1.0.0&request=Get
 </sos:GetObservation>
 ```
 
-#### 3.2.3.2 GetObservation Response ####
+##### GetObservation Response #####
 
 A **GetObservation** response returns a collection of observations. Each observation is composed of metadata, description of the phenomena being returned (parameter names, units of measure, reference systems) and values.
 
@@ -1412,7 +1388,7 @@ Since the common metadata parts of any GetObservation response are practically t
 
 Only critical templates’ components are discussed hereinafter just in order to limit the size of the document; however, all necessary measures were taken to ensure that template description completeness has not suffered. At any rate, the templates are well commented, and can provide a lot of needed information themselves.
 
-##### 3.2.3.2.1 OM-GetObservation Template #####
+###### OM-GetObservation Template ######
 
 The outline of the OM-GetObservation template is presented below:
 
@@ -1479,7 +1455,7 @@ The outline of the OM-GetObservation template is presented below:
 
 
 
-##### 3.2.3.2.2 SWE-GetObservation Template #####
+###### SWE-GetObservation Template ######
 
 The OGC SWE Common Data Model Encoding Standard v2.0 allows data components to be used as a data container as well as a data descriptor, where container defines metadata of a data set and includes the actual property values (“inline” values), while data descriptor defines metadata of a data set but does not include the actual data values. However, the Standard prohibits mixing of both guises in a single data component entity. For example, a single DataArray cannot contain both inline values and block-encoded values. Therefore, the IOOS Convention requires a Result block to include a root DataRecord composed of two basic fields – “stations” and “observationData”. The field "stations" forms a “static” part of the GetObservation response Result block that encompasses all invariable data for all stations and sensors, whereas the field “observationData” draws up a “dynamic” part that encloses observation values varying from sensor to sensor. All data components in the static block must be used as data containers and encoded inline, while the data components in the dynamic block must be used only as data descriptors, and contain a DataArray with block-encoded values:
 
@@ -1543,7 +1519,7 @@ In a similar manner, an abbreviated station ID is composed of the authority and
 
 <br />
 
-###### 3.2.3.2.2.1 Static Data Block ######
+####### Static Data Block #######
 
 The static information for all stations and sensors in GetObservation response is encompassed within the field “stations” of the root DataRecord element. Each DataRecord’s field may recursively enclose an unlimited number of DataRecords, which makes the static data block a pretty complex structure of nested DataRecords in case of multiple stations and/or sensors, as shown in [**Figure 8**](#Fig_8).
 
@@ -1862,7 +1838,7 @@ For non-binned profiling sensors, the IOOS Convention requires a description of 
 </swe2:field>
 ```
 
-###### 3.2.3.2.2.2 Dynamic Data Block (Sensor Observations) ######
+####### Dynamic Data Block (Sensor Observations) #######
 
 The dynamic data block contains all measurements made by sensors and any other dynamic data (e.g. location for mobile sensors) from each sensor requested in GetObservation operation. In conformity with the OGC SWE Common Data Model Encoding Standard v2.0, the dynamic block must not contain any inline encoded data.
 
@@ -2064,7 +2040,7 @@ The IOOS Convention requires that, in contrast to the \<swe2:TextEncoding\> elem
 </swe2:values>
 ```
 
-<a name="3.2.3.2.2.2.1"></a> _**3.2.3.2.2.2.1 Observation-specific QA/QC information**_
+######## Observation-specific QA/QC information ########
 
 The dynamic data block of GetObservation response may contain observation specific QA/QC information, encoded in the same **DataArray** with other observation values.
 
@@ -2199,7 +2175,7 @@ In order to define a composite flag that may have several components with variou
 </swe2:DataArray>
 ```
 
-<a name="3.2.3.2.2.2.2"></a> _**3.2.3.2.2.2.2 Profiling sensor observation-specific report**_
+######## Profiling sensor observation-specific report ########
 
 The dynamic data block for profiling sensor has several important specifics that are stipulated by the ability of the sensor to perform a number of simultaneous observations at multiple points of the vertical axis. In order to provide for encoding of multiple simultaneous observations in one record, the IOOS Convention requires the use of a nested **DataArray** for each profiling sensor description in a **DataChoice** structure.
 
@@ -2292,7 +2268,7 @@ Similar to the non-profiling sensors, the sensor names used in the **DataChoice*
 
 
 
-## 4 GLOSSARY ##
+## GLOSSARY ##
    
 Term | Definition
 :-----| :--------
@@ -2312,7 +2288,7 @@ Feature of Interest | A feature that relates to the observations, and represente
 Offering | A collection of sensors used to conveniently group them up (e.g. network:all, network:all-temperature, sensor:watertemp, etc.) and is represented as `<sos:ObservationOffering>` element of the SOS standard.
 
 
-## 5 ACRONYMS ##
+## ACRONYMS ##
 
 Acronym|Definition
  :----- |:-----
@@ -2397,3 +2373,24 @@ WSN|Web Services Notification
 WSRD|Web Service Requirements Document
 XML|eXtensible Markup Language
 
+
+
+## APPLICABLE DOCUMENTS ##
+
+| #  | Name and Location  |
+| :---: | :--- |
+| 1 | OpenGIS Geography Markup Language (GML) Encoding Standard Version 3.1, Open Geospatial Consortium (OGC), February 2004. [http://www.opengeospatial.org/standards/gml](http://www.opengeospatial.org/standards/gml) |
+| 2 | OpenGIS Sensor Model Language (SensorML) Implementation Specification Version 1.0.0, Open Geospatial Consortium (OGC), July 2007 [http://www.opengeospatial.org/standards/sensorml](http://www.opengeospatial.org/standards/sensorml) |
+| 3 | OpenGIS Filter Encoding 2.0 Encoding Standard Version 2.0.0, Open Geospatial Consortium, International Organization for Standards (ISO) 19143:2010, November 2010. [http://www.opengeospatial.org/standards/filter](http://www.opengeospatial.org/standards/filter)|
+| 4 | OpenGIS Geography Markup Language (GML) Encoding Standard Version 3.2.1, Open Geospatial Consortium (OGC), August 2007. [http://www.opengeospatial.org/standards/gml](http://www.opengeospatial.org/standards/gml) |
+| 5 | OpenGIS Sensor Observation Service (SOS) Implementation Standard Version 1.0.0, Open Geospatial Consortium, October 2007, OGC 06-009r6. [http://www.opengeospatial.org/standards/sos](http://www.opengeospatial.org/standards/sos) |
+| 6 | OpenGIS Sensor Observation Service (SOS) Implementation Standard Version 2.0, Open Geospatial Consortium, April 2012, OGC 12-006. [http://www.opengeospatial.org/standards/sos](http://www.opengeospatial.org/standards/sos) |
+| 7 | OpenGIS Network Common Data Form (NetCDF) Core Encoding Standard Version 1.0, Open Geospatial Consortium, April 2011. [http://www.opengeospatial.org/standards/netcdf](http://www.opengeospatial.org/standards/netcdf) |
+| 8 | OpenGIS Web Services Common Standard Version 2.0, Open Geospatial Consortium, April 2010. [http://www.opengeospatial.org/standards/common](http://www.opengeospatial.org/standards/common) |
+| 9 | Web Services Description Language (WSDL) Version 1.1, W3C Note, March 2001 [http://www.w3.org/TR/wsdl](http://www.w3.org/TR/wsdl) |
+| 10 | NetCDF Climate and Forecast (CF) Metadata Conventions Version 1.6, December 2011,  [http://cf-pcmdi.llnl.gov/documents](http://cf-pcmdi.llnl.gov/documents) |
+| 11 | CF Conventions Standard Name Table, Version 25, July 2013,  [http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/25/cf-standard-name-table.html](http://cf-pcmdi.llnl.gov/documents/cf-standard-names/standard-name-table/25/cf-standard-name-table.html) |
+| 12 | NetCDF Feature Type Templates, National Oceanographic Data Center (NODC) [http://www.nodc.noaa.gov/data/formats/netcdf/#templatesexamples](http://www.nodc.noaa.gov/data/formats/netcdf/#templatesexamples) |
+| 13 | OpenGIS SWE Common Data Model Encoding Standard Version 2.0.0, Open Geospatial Consortium (OGC), January 2011 [http://www.opengeospatial.org/standards/swecommon](http://www.opengeospatial.org/standards/swecommon) |
+
+* * * * *
