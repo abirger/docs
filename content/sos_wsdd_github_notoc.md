@@ -1,5 +1,5 @@
 +++
-path = "abirger.github.io/docs/sos_wsdd_github_notoc"
+path = "docs/"
 draft = false
 title = "IOOS SOS 1.0 WSDD"
 description = "IOOS SOS Milestone 1.0 Web Service Description"
