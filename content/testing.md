@@ -1,5 +1,4 @@
 +++
-path = "/docs/"
 draft = false
 title = "List of SOS Tests"
 subtitle = "List of OGC CITE general & IOOS-specific tests for IOOS SOS Milestone 1.0"

@@ -1,5 +1,4 @@
 +++
-path = "docs/"
 draft = false
 title = "IOOS SOS 1.0 WSDD"
 description = "IOOS SOS Milestone 1.0 Web Service Description"

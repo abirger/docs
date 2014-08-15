@@ -1,5 +1,4 @@
 +++
-path = "docs/"
 weight = "-500"
 draft = false
 title = "About this site"
