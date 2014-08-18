@@ -1651,10 +1651,14 @@ The following fragment of the IOOS Milestone 1.0 Template illustrates just that 
 <br />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ###### _Common QA/QC information_ ######
 =======
 <a name="3.2.3.2.2.1.1"></a> _**3.2.3.2.2.1.1 Common QA/QC information**_
 >>>>>>> parent of c4dfab8... Updating site
+=======
+###### _3.2.3.2.2.1.1 Common QA/QC information_ ######
+>>>>>>> parent of d8a7d43... wsdd_cleanup
 
 It has been a long-standing IOOS’ goal to implement the principles of Quality Assurance of Real Time Ocean Data (QARTOD) in the IOOS SOS, and the IOOS Convention has taken a first step in that direction by providing a guidance (based on the best practices of the IOOS data providers like NDBC) of reporting QA/QC information in the Milestone 1.0 templates. However, since the QARTOD has yet to develop the authoritative QA/QC procedures for all IOOS observed properties and feature types, the IOOS Convention provisions are not mandatory at the moment, and Milestone 1.0 templates should be considered as sort of “best practices” recommendations, mostly based on the NDBC’s system of pre-defined QA/QC flags (tockens).
 
@@ -1689,10 +1693,14 @@ The static data block in GetObservations document may include any common QA/QC i
 <br />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ###### _Profiling sensor specifics_ ######
 =======
 <a name="3.2.3.2.2.1.2"></a> _**3.2.3.2.2.1.2 Profiling sensor specifics**_
 >>>>>>> parent of c4dfab8... Updating site
+=======
+###### _3.2.3.2.2.1.2 Profiling sensor specifics_ ######
+>>>>>>> parent of d8a7d43... wsdd_cleanup
 
 For profiling sensor, just the indication of the sensor’s upward or downward shift relative to the platform position is not sufficient, and the IOOS Convention provides for more precise description of sensor’s position and orientation, including description of bins and depths for binned profile sensors. Although the Convention does not require a full description of a sensor’s orientation, the Convention strongly encourages the indication of this information for all vertical profiling sensors (e.g. ADCP).
 
