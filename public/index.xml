@@ -3034,7 +3034,33 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&#34;3.2.3.2.2.1.1&#34;&gt;&lt;/a&gt; &lt;em&gt;&lt;strong&gt;3.2.3.2.2.1.1 Common QA/QC information&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;/p&gt;
+
+&lt;h6 id=&#34;toc_28&#34;&gt;&lt;em&gt;Common QA/QC information&lt;/em&gt;&lt;/h6&gt;
+
+&lt;p&gt;=======
+&lt;a name=&#34;3.2.3.2.2.1.1&#34;&gt;&lt;/a&gt; &lt;em&gt;&lt;strong&gt;3.2.3.2.2.1.1 Common QA/QC information&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;toc_29&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; parent of c4dfab8&amp;hellip; Updating site&lt;/h1&gt;
+
+&lt;h6 id=&#34;toc_30&#34;&gt;&lt;em&gt;3.2.3.2.2.1.1 Common QA/QC information&lt;/em&gt;&lt;/h6&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;parent of d8a7d43&amp;hellip; wsdd_cleanup&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;It has been a long-standing IOOS’ goal to implement the principles of Quality Assurance of Real Time Ocean Data (QARTOD) in the IOOS SOS, and the IOOS Convention has taken a first step in that direction by providing a guidance (based on the best practices of the IOOS data providers like NDBC) of reporting QA/QC information in the Milestone 1.0 templates. However, since the QARTOD has yet to develop the authoritative QA/QC procedures for all IOOS observed properties and feature types, the IOOS Convention provisions are not mandatory at the moment, and Milestone 1.0 templates should be considered as sort of “best practices” recommendations, mostly based on the NDBC’s system of pre-defined QA/QC flags (tockens).&lt;/p&gt;
 
@@ -3066,7 +3092,33 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a name=&#34;3.2.3.2.2.1.2&#34;&gt;&lt;/a&gt; &lt;em&gt;&lt;strong&gt;3.2.3.2.2.1.2 Profiling sensor specifics&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD&lt;/p&gt;
+
+&lt;h6 id=&#34;toc_31&#34;&gt;&lt;em&gt;Profiling sensor specifics&lt;/em&gt;&lt;/h6&gt;
+
+&lt;p&gt;=======
+&lt;a name=&#34;3.2.3.2.2.1.2&#34;&gt;&lt;/a&gt; &lt;em&gt;&lt;strong&gt;3.2.3.2.2.1.2 Profiling sensor specifics&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;toc_32&#34;&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt; parent of c4dfab8&amp;hellip; Updating site&lt;/h1&gt;
+
+&lt;h6 id=&#34;toc_33&#34;&gt;&lt;em&gt;3.2.3.2.2.1.2 Profiling sensor specifics&lt;/em&gt;&lt;/h6&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;parent of d8a7d43&amp;hellip; wsdd_cleanup&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;For profiling sensor, just the indication of the sensor’s upward or downward shift relative to the platform position is not sufficient, and the IOOS Convention provides for more precise description of sensor’s position and orientation, including description of bins and depths for binned profile sensors. Although the Convention does not require a full description of a sensor’s orientation, the Convention strongly encourages the indication of this information for all vertical profiling sensors (e.g. ADCP).&lt;/p&gt;
 
@@ -3636,7 +3688,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_28&#34;&gt;GLOSSARY&lt;/h2&gt;
+&lt;h2 id=&#34;toc_34&#34;&gt;GLOSSARY&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -3719,7 +3771,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;toc_29&#34;&gt;ACRONYMS&lt;/h2&gt;
+&lt;h2 id=&#34;toc_35&#34;&gt;ACRONYMS&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -4132,7 +4184,7 @@ outputFormat=&amp;quot;text/xml;subtype=&amp;amp;quot;sensorML/1.0.1/profiles/io
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;toc_30&#34;&gt;APPLICABLE DOCUMENTS&lt;/h2&gt;
+&lt;h2 id=&#34;toc_36&#34;&gt;APPLICABLE DOCUMENTS&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
